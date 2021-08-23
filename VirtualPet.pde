@@ -1,13 +1,27 @@
 void setup()
 {
   size(600,600);
-  background(0);
+  background(255,255,255);
 }
 
 public void draw() {
-  fill(255,255,255);
+  //head
+  fill(0,0,0); 
   ellipse(300,300, 300,300);
-  fill(200,200,200);
+  //eyeballs
+  fill(255,255,255);
   ellipse(230,250, 80,55);
   ellipse(370,250, 80,55);
+  fill(255,234,0);
+  //irises
+  noStroke();
+  ellipse(230,250, 60,40);
+  ellipse(370,250, 60,40);
+  //pupils
+  fill(0,0,0);
+  ellipse(230,250, 20,30);
+  ellipse(370,250, 20,30);
+  //nose
+  fill(255,182,193);
+  triangle(300,20,20,280,280,280); 
 }
