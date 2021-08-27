@@ -1,16 +1,9 @@
-import cc.arduino.*;
-import processing.serial.*;
-Arduino arduino;
-
 void setup() {
   size(600, 600);
-  arduino = new Arduino(this, Arduino.list()[1], 57600);
 }
 
 public void draw() {
   background(255, 255, 255);
-  int y = arduino.analogRead(5);
-  System.out.println(y);
   //head
   fill(0, 0, 0); 
   ellipse(300, 300, 300, 300);
